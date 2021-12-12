@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AppServerModule} from "./app.server.module";
 import {NavbarComponent} from "./components/navbar/navbar.component";
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

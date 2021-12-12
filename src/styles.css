@@ -14,6 +14,34 @@ li:not(:last-child) {
   margin-bottom: 0.8rem;
 }
 
+input {
+  border: 0;
+  padding: 0.6rem;
+}
+
+input:focus {
+  outline: 2px solid #1e555c;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+button {
+  background-color: #1e555c;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background-color 200ms ease;
+}
+
+button:hover {
+  background-color: #324B4E;
+  cursor: pointer;
+}
 .info-menu-text {
   color: white;
   margin: 0.3rem 2.4rem;
@@ -112,6 +140,10 @@ li:not(:last-child) {
 
 .menu-burger-icon:hover {
   cursor: pointer;
+}
+
+.check-availability-card {
+  background: #f3f1e9;
 }
 
 .first-line {
