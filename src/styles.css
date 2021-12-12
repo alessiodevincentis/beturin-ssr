@@ -42,6 +42,12 @@ button:hover {
   background-color: #324B4E;
   cursor: pointer;
 }
+
+a {
+  color: #1e555c;
+  font-weight: bold;
+  text-decoration: none;
+}
 .info-menu-text {
   color: white;
   margin: 0.3rem 2.4rem;
@@ -177,7 +183,8 @@ button:hover {
 
 .open-menu {
   background-color: #1e555c;
-  position: absolute;
+  position: fixed;
+  overflow: auto;
   top: 0;
   left: 0;
   right: 0;
