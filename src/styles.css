@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Omnes";
+  src: url("assets/fonts/Omnes.ttf") format("truetype")
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  counter-reset: div;
+  padding: 0.5rem;
+}
+
+.col-1 {
+  grid-column: auto/span 1;
+}
+.col-2 {
+  grid-column: auto/span 2;
+}
+.col-3 {
+  grid-column: auto/span 3;
+}
+.col-4 {
+  grid-column: auto/span 4;
+}
+.col-5 {
+  grid-column: auto/span 5;
+}
+.col-6 {
+  grid-column: auto/span 6;
+  display: grid;
+}
+.col-7 {
+  grid-column: auto/span 7;
+}
+.col-8 {
+  grid-column: auto/span 8;
+}
+.col-9 {
+  grid-column: auto/span 9;
+}
+.col-10 {
+  grid-column: auto/span 10;
+}
+.col-11 {
+  grid-column: auto/span 11;
+}
+.col-12 {
+  grid-column: auto/span 12;
+  display: grid;
+}
+
+.justify-item-start {
+  justify-items: start;
+}
+
+.justify-item-center {
+  justify-items: center;
+}
+
+.justify-item-end {
+  justify-items: end;
+}
+
+.align-self-start {
+  align-self: start;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+* {
+  margin: 0;
+  font-family: Omnes;
+}
+
+
+.navbarGrid {
+  background-color: #1e555c;
+  padding: 1rem;
+}
+
+.text-logo {
+  color: white;
+}
+
+.menu-line {
+  height: 0.1rem;
+  background-color: white;
+}
+
+.menu-burger-icon:hover {
+  cursor: pointer;
+}
+
+.first-line {
+  width: 1.5rem;
+  margin-bottom: 0.4rem;
+  transition: width 0.2s ease-out;
+  -webkit-transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -ms-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+}
+
+.menu-burger-icon:hover > .first-line,
+.menu-burger-icon:hover > .third-line{
+  width: 2rem;
+}
+
+.second-line {
+  width: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.third-line {
+  width: 1.5rem;
+  transition: width 0.2s ease-out;
+  -webkit-transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -ms-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+}
+
+.open-menu {
+  background-color: #1e555c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+
+@media screen and (min-width: 992px) {
+  .lg\:col-1 {
+    grid-column: auto/span 1;
+  }
+  .lg\:col-2 {
+    grid-column: auto/span 2;
+  }
+  .lg\:col-3 {
+    grid-column: auto/span 3;
+  }
+  .lg\:col-4 {
+    grid-column: auto/span 4;
+  }
+  .lg\:col-5 {
+    grid-column: auto/span 5;
+  }
+  .lg\:col-6 {
+    grid-column: auto/span 6;
+  }
+  .lg\:col-7 {
+    grid-column: auto/span 7;
+  }
+  .lg\:col-8 {
+    grid-column: auto/span 8;
+  }
+  .lg\:col-9 {
+    grid-column: auto/span 9;
+  }
+  .lg\:col-10 {
+    grid-column: auto/span 10;
+  }
+  .lg\:col-11 {
+    grid-column: auto/span 11;
+  }
+  .lg\:col-12 {
+    grid-column: auto/span 12;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .md\:col-1 {
+    grid-column: auto/span 1;
+  }
+  .md\:col-2 {
+    grid-column: auto/span 2;
+  }
+  .md\:col-3 {
+    grid-column: auto/span 3;
+  }
+  .md\:col-4 {
+    grid-column: auto/span 4;
+  }
+  .md\:col-5 {
+    grid-column: auto/span 5;
+  }
+  .md\:col-6 {
+    grid-column: auto/span 6;
+  }
+  .md\:col-7 {
+    grid-column: auto/span 7;
+  }
+  .md\:col-8 {
+    grid-column: auto/span 8;
+  }
+  .md\:col-9 {
+    grid-column: auto/span 9;
+  }
+  .md\:col-10 {
+    grid-column: auto/span 10;
+  }
+  .md\:col-11 {
+    grid-column: auto/span 11;
+  }
+  .md\:col-12 {
+    grid-column: auto/span 12;
+  }
+}

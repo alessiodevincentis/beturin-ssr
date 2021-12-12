@@ -1,0 +1,26 @@
+<div class="grid navbarGrid">
+  <div class="col-6">
+    <div class="grid justify-item-start">
+      <div class="col-12">
+        <h2 class="text-logo">beturin</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 align-self-center">
+    <div class="grid justify-item-end">
+      <div (click)="manageMenuNavbar(true)" class="col-12 menu-burger-icon">
+        <div class="menu-line first-line"></div>
+        <div class="menu-line second-line"></div>
+        <div class="menu-line third-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="menuDiv" class="open-menu" [ngClass]="this.isMenuNavbarOpen ? 'slide-in' : 'slide-out'">
+  <div class="grid">
+    <div class="col-12 justify-item-end">
+      <button (click)="manageMenuNavbar(false)">CLOSE</button>
+    </div>
+  </div>
+</div>
