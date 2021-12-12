@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   public isMenuNavbarOpen = false;
+  public animationSlideIn = false;
 
   constructor() { }
 
@@ -15,6 +16,9 @@ export class NavbarComponent implements OnInit {
   }
 
   manageMenuNavbar(isMenuOpening: boolean) {
-    this.isMenuNavbarOpen = isMenuOpening;
+    this.animationSlideIn = isMenuOpening;
+    setTimeout(() => {
+      this.isMenuNavbarOpen = isMenuOpening;
+    },!isMenuOpening ? 500 : 0)
   }
 }

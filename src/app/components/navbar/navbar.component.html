@@ -17,10 +17,36 @@
   </div>
 </div>
 
-<div id="menuDiv" class="open-menu" [ngClass]="this.isMenuNavbarOpen ? 'slide-in' : 'slide-out'">
-  <div class="grid">
-    <div class="col-12 justify-item-end">
-      <button (click)="manageMenuNavbar(false)">CLOSE</button>
+<ng-container *ngIf="isMenuNavbarOpen">
+  <div id="menuDiv" class="open-menu" [ngClass]="this.animationSlideIn ? 'slide-in' : 'slide-out'">
+    <div class="grid">
+      <div class="col-12 justify-item-end">
+        <div (click)="manageMenuNavbar(false)" class="col-12 menu-burger-icon">
+          close
+        </div>
+      </div>
+      <div class="col-12">
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>ROOMS</li>
+          <li>CONTACT US</li>
+        </ul>
+      </div>
+      <div [style]="{'margin-top':'3rem'}" class="col-12">
+        <p class="info-menu-text">Corso Roma 173, 00187 Torino</p>
+      </div>
+      <div class="col-12">
+        <p class="info-menu-text">+39 3403885497</p>
+      </div>
+      <div class="col-12">
+        <p class="info-menu-text">info@beturin.com</p>
+      </div>
+      <div [style]="{'margin-top':'1.6rem'}" class="col-12">
+        <p class="info-menu-text">FACEBOOK</p>
+        <p class="info-menu-text">INSTAGRAM</p>
+        <p class="info-menu-text">WHATSAPP</p>
+      </div>
     </div>
   </div>
-</div>
+</ng-container>
