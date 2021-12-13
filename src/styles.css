@@ -14,12 +14,16 @@ li:not(:last-child) {
   margin-bottom: 0.8rem;
 }
 
+textarea {
+  border: none;
+}
+
 input {
   border: 0;
   padding: 0.6rem;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: 2px solid #1e555c;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -36,6 +40,12 @@ button {
   text-decoration: none;
   padding: 1rem;
   transition: background-color 200ms ease;
+}
+
+.inverted-button {
+  color: #1e555c;
+  background-color: white;
+  border: 2px solid #1e555c;
 }
 
 button:hover {
@@ -134,8 +144,6 @@ a {
   background-color: #1e555c;
   padding: 1rem;
   top: 0;
-  position: sticky;
-  z-index: 1000;
 }
 
 .text-logo {

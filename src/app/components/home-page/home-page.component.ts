@@ -15,4 +15,8 @@ export class HomePageComponent implements OnInit {
   findRooms() {
 
   }
+
+  sendMessage() {
+
+  }
 }

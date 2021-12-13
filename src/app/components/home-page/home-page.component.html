@@ -45,8 +45,11 @@
       <div class="col-12">
         <p [style]="{'line-height':'24px'}">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
       </div>
-      <div [style]="{'margin':'1.3rem 0 3.5rem 0'}" class="col-12">
-        <a href="#">VIEW MORE</a>
+      <div [style]="{'margin':'1.3rem 0.2rem 3.5rem 0'}" class="col-6">
+        <button>a partire da 89€</button>
+      </div>
+      <div [style]="{'margin':'1.3rem 0 3.5rem 0.2rem'}" class="col-6">
+        <button class="inverted-button">VIEW MORE</button>
       </div>
 
 
@@ -65,8 +68,73 @@
       <div class="col-12">
         <p [style]="{'line-height':'24px'}">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
       </div>
-      <div [style]="{'margin':'1.3rem 0 3.5rem 0'}" class="col-12">
-        <a href="#">VIEW MORE</a>
+      <div [style]="{'margin':'1.3rem 0.2rem 3.5rem 0'}" class="col-6">
+        <button>a partire da 69€</button>
+      </div>
+      <div [style]="{'margin':'1.3rem 0 3.5rem 0.2rem'}" class="col-6">
+        <button class="inverted-button">VIEW MORE</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="grid">
+      <div [style]="{'margin':'2.5rem 0 1.8rem 0'}" class="col-12">
+        <h2 [style]="{'text-align':'center'}">Stories from our guests</h2>
+      </div>
+      <div class="col-12">
+      <img class="room-review-home" src="https://image.freepik.com/free-photo/smiling-beautiful-girl-her-handsome-boyfriend-casual-summer-clothes-happy-family-taking-selfie-self-portrait-themselves-smartphone-camera-shows-peace-sign-winking-street_158538-5459.jpg">
+      </div>
+      <div [style]="{'margin':'1rem 0 0.2rem 0'}" class="col-12">
+        <p [style]="{'font-style':'italic','font-weight':'bold','font-size':'1.2rem'}">Like beeing at your home</p>
+      </div>
+      <div [style]="{'margin':'1rem 0 4.5rem 0'}" class="col-12">
+        <p [style]="{'font-style':'italic','font-size':'1.1rem','line-height':'24px'}">"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."</p>
+      </div>
+      <div class="col-12">
+        <img class="room-review-home" src="https://image.freepik.com/free-photo/medium-shot-people-taking-selfie_23-2149203211.jpg">
+      </div>
+      <div [style]="{'margin':'1rem 0 0.2rem 0'}" class="col-12">
+        <p [style]="{'font-style':'italic','font-weight':'bold','font-size':'1.2rem'}">Very close to Turin center</p>
+      </div>
+      <div [style]="{'margin':'1rem 0 4.5rem 0'}" class="col-12">
+        <p [style]="{'font-style':'italic','font-size':'1.1rem','line-height':'24px'}">"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."</p>
+      </div>
+      <div class="col-12">
+        <img class="room-review-home" src="https://image.freepik.com/free-photo/portrait-daughter-father-having-fun-together-taking-selfie-while-sitting-couch-home_58466-15563.jpg">
+      </div>
+      <div [style]="{'margin':'1rem 0 0.2rem 0'}" class="col-12">
+        <p [style]="{'font-style':'italic','font-weight':'bold','font-size':'1.2rem'}">Cleanest and nicest room in Turin</p>
+      </div>
+      <div [style]="{'margin':'1rem 0 0.5rem 0'}" class="col-12">
+        <p [style]="{'font-style':'italic','font-size':'1.1rem','line-height':'24px'}">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."</p>
+      </div>
+    </div>
+  </div>
+  <div [style]="{'margin':'5rem 0 0 0','width':'85%'}" class="col-12 align-self-center">
+    <div class="grid justify-item-center align-self-center check-availability-card">
+      <div [style]="{'margin':'1rem 0 0 0'}"  class="col-12 align-self-center">
+        <p>+39 3403885497</p>
+      </div>
+      <div [style]="{'margin':'1rem 0'}"  class="col-12 align-self-center">
+        <p>info@beturin.com</p>
+      </div>
+      <div [style]="{'margin':'1rem 0'}"  class="col-12 align-self-center">
+        <p [style]="{'font-weight':'bold','font-size':'1.3rem'}">Contact us</p>
+      </div>
+      <div [style]="{'width':'85%','margin':'0.3rem 0'}" class="col-12 align-self-center">
+        <label [style]="{'text-align':'center','margin-bottom':'0.3rem'}" for="name">Name</label>
+        <input type="text" id="name">
+      </div>
+      <div [style]="{'width':'85%','margin':'0.3rem 0'}" class="col-12 align-self-center">
+        <label [style]="{'text-align':'center','margin-bottom':'0.3rem'}" for="email">Email</label>
+        <input type="text" id="email">
+      </div>
+      <div [style]="{'width':'85%','margin':'0.3rem 0.3rem 0.3rem 0'}" class="col-12 align-self-center">
+        <label [style]="{'text-align':'center','margin-bottom':'0.3rem'}" for="message">Message</label>
+        <textarea id="message" [rows]="5"></textarea>
+      </div>
+      <div [style]="{'width':'80%','margin':'1.6rem 0'}" class="col-12 align-self-center">
+        <button (click)="sendMessage()">SEND MESSAGE</button>
       </div>
     </div>
   </div>
