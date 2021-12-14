@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import {AppServerModule} from "./app.server.module";
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomePageComponent
+    HomePageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

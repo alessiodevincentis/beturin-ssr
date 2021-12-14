@@ -159,6 +159,27 @@ a {
   cursor: pointer;
 }
 
+.footer-beturin {
+  background-color: #324B4E;
+  color: white;
+}
+
+.footer-text {
+  opacity: 0.7;
+  font-size: 0.8rem;
+  line-height: 22px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.footer-secondary {
+  color: #f3f1e9;
+  font-size: 0.8rem;
+  line-height: 22px;
+  font-weight: lighter;
+  text-align: center;
+}
+
 .check-availability-card {
   background: #f3f1e9;
 }
