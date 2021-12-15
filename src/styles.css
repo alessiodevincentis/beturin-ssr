@@ -159,6 +159,18 @@ a {
   cursor: pointer;
 }
 
+.close-icon:after {
+  content: "\00d7";
+  color: white;
+  font-size: 2.2rem;
+  font-weight: lighter;
+  margin-right: 1rem;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
 .footer-beturin {
   background-color: #324B4E;
   color: white;
