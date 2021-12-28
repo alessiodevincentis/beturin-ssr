@@ -7,6 +7,9 @@ import {AppServerModule} from "./app.server.module";
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {AngularFireModule} from "@angular/fire";
+import {environment} from "../environments/environment";
+import {AngularFirestoreModule} from "@angular/fire/firestore";
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],exports: [NavbarComponent],
 
   providers: [],
