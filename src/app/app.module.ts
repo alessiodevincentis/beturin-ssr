@@ -10,13 +10,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import {AngularFireModule} from "@angular/fire";
 import {environment} from "../environments/environment";
 import {AngularFirestoreModule} from "@angular/fire/firestore";
+import { LoaderScreenComponent } from './components/loader-screen/loader-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomePageComponent,
-    FooterComponent
+    FooterComponent,
+    LoaderScreenComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
